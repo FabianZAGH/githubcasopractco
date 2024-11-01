@@ -1,0 +1,95 @@
+﻿@model IEnumerable<ManejoDeInventario.Abstracciones.Modelos.Inventario.RepuestoDto>
+
+@{
+
+}
+
+<h2>Index</h2>
+
+<p>
+	@Html.ActionLink("Create New", "Create") | <button id="sweetAlert">Sweet</button>
+</p>
+<table class="table" id="myTable">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.CodigoDelRepuesto)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.NombreDelRepuesto)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Vehiculo)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Modelo)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.MarcaDelRepuesto)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Anio)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Cantidad)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.FechaDeRegistro)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.FechaDeModificacion)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Estado)
+			</th>
+			<th>Opciones</th>
+		</tr>
+	</thead>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.CodigoDelRepuesto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.NombreDelRepuesto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Vehiculo)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Modelo)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.MarcaDelRepuesto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Anio)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Cantidad)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.FechaDeRegistro)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.FechaDeModificacion)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Estado)
+			</td>
+			<td>
+				@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+				@Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+				@Html.ActionLink("Delete", "Delete", new {  id=item.Id  })
+			</td>
+		</tr>
+	}
+
+</table>
+
+
+@section scripts{
+	<script src="~/Scripts/ScriptsDeFront/LaTablaDeRepuestos.js"></script>
+	}

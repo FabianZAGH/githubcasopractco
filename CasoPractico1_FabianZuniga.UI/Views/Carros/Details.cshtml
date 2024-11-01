@@ -1,0 +1,114 @@
+﻿@model ManejoDeInventario.Abstracciones.Modelos.Inventario.RepuestoDto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RepuestoDto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehiculo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehiculo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarcaDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarcaDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreDeArchivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreDeArchivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Path)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Path)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
